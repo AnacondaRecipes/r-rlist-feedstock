@@ -10,8 +10,8 @@ package:
 source:
   fn: rlist_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/rlist_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/rlist/rlist_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/rlist_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/rlist/rlist_{{ version }}.tar.gz
   sha256: bb0148b124997aa4e1c89c6c7cf45927afaf5b23caefcdc5116cfa7caef05c21
 
 
