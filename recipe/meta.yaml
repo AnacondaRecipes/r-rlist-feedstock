@@ -8,7 +8,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: rlist_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/rlist_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rlist/rlist_{{ version }}.tar.gz
@@ -27,6 +26,7 @@ build:
 # Suggests: testthat, stringdist, pipeR
 requirements:
   build:
+    - {{posix}}zip               # [win]
 
   host:
     - r-base
